@@ -5,7 +5,7 @@ import { createAndAuthenticateUser } from '@/utils/test/create-and-authenticate-
 
 let token: string
 
-describe('Profile (e2e)', () => {
+describe('Create Gym (e2e)', () => {
   beforeAll(async () => {
     await app.ready()
 
@@ -15,19 +15,18 @@ describe('Profile (e2e)', () => {
   afterAll(async () => {
     await app.close()
   })
-  it('should ne able to get user profile', async () => {
+  it('should ne able to create gym', async () => {
     const response = await request(app.server)
-      .get('/me')
+      .post('/gyms')
       .set('Authorization', `Bearer ${token}`)
+      .send({
+        title: 'JS Gym',
+        description: 'Gym focusing on JavaScript',
+        phone: '(11) 98765-4321',
+        latitude: -22.3260708,
+        longitude: -46.9274232,
+      })
 
-    expect(response.statusCode).toBe(200)
-    expect(response.body).toEqual({
-      user: {
-        id: expect.any(String),
-        created_at: expect.any(String),
-        name: 'John Doe',
-        email: 'john.doe@example.com',
-      },
-    })
+    expect(response.statusCode).toBe(201)
   })
 })
