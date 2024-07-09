@@ -9,7 +9,7 @@ describe('Nearby Gyms (e2e)', () => {
   beforeAll(async () => {
     await app.ready()
 
-    token = (await createAndAuthenticateUser(app)).token
+    token = (await createAndAuthenticateUser(app, true)).token
   })
 
   afterAll(async () => {
