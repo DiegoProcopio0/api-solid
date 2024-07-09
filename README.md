@@ -6,6 +6,13 @@
 [Git__url]: https://git-scm.com/
 [Fastify_BADGE]: https://img.shields.io/badge/fastify-%23000000.svg?style=for-the-badge&logo=fastify&logoColor=white
 [Fastify__url]: https://fastify.dev/
+[Docker_BADGE]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[Docker__url]: https://www.docker.com/
+[Postgres_BADGE]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
+[Postgres__url]: https://www.postgresql.org/
+[Prisma_BADGE]: https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white
+[Prisma__url]: https://www.prisma.io/
+
 
 <h1 align="center" style="font-weight: bold;">API SOLID 💻</h1>
 
@@ -19,6 +26,9 @@
 - [![EsLint][Eslint.js]][Eslint-url]
 - [![Git][Git_BADGE]][Git__url]
 - [![Fastify][Fastify_BADGE]][Fastify__url]
+- [![Docker][Docker_BADGE]][Docker__url]
+- [![Postgres][Postgres_BADGE]][Postgres__url]
+- [![Prisma][Prisma_BADGE]][Prisma__url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
